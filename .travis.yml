@@ -12,7 +12,5 @@ script:
   - docker run -e CI=true johnny25580/docker-react-app npm run test
 
 deploy:
-  provider: script
-  script: docker login -u johnny25580 -p 24Gameps2 && docker push johnny25580/docker-react-app
   on:
     branch: main
