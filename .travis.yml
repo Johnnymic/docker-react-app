@@ -1,4 +1,8 @@
 sudo: required
+branches:
+  only:
+    - main
+
 
 services: 
   - docker
